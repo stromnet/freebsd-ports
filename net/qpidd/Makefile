@@ -116,8 +116,12 @@ BUILD_DEPENDS+= ${LOCALBASE}/bin/swig2.0:${PORTSDIR}/devel/swig20
 USES+=python:build
 .endif
 
+PORTDOCS = LICENSE NOTICE
+CMAKE_ARGS+= -DDOC_INSTALL_DIR=${LOCALBASE}/share/doc/${PORTNAME}
+
 .if ${PORT_OPTIONS:MDOXYGEN}
 MAKE_ARGS=all docs
+PORTDOCS+= api/*
 .endif
 
 post-patch:
