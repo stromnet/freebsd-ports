@@ -1,0 +1,8 @@
+The Qpid Management Framework is a general-purpose management bus built on
+Qpid messaging.
+
+It takes advantage of the scalability, security, and rich capabilities of
+Qpid to provide flexible and easy-to-use manageability to a large set of
+applications.
+
+WWW: https://qpid.apache.org/components/qmf/index.html

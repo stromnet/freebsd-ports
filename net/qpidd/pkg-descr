@@ -1,0 +1,9 @@
+Apache Qpid makes messaging tools that speak AMQP and support many
+languages and platforms.
+
+A message broker written in C++ that stores, routes, and forwards
+messages using AMQP.
+
+This also includes the Qpid C++ libraries.
+
+WWW: https://qpid.apache.org/components/cpp-broker/index.html

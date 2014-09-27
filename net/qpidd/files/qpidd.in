@@ -1,0 +1,50 @@
+#!/bin/sh
+
+#
+# PROVIDE: qpidd
+# Add the following lines to /etc/rc.conf to enable qpidd:
+# qpidd_enable (bool):    Set to "NO" by default.
+#                            Set it to "YES" to enable qpidd.
+# qpidd_flags (str):      Set to "" by default.
+# qpidd_configfile (str): Set to "/usr/local/etc/qpidd.conf" by defult
+#
+
+. /etc/rc.subr
+
+name="qpidd"
+rcvar=qpidd_enable
+
+command="/usr/local/sbin/qpidd"
+pidfile="/var/run/qpidd.pid"
+
+qpidd_enable=${qpidd_enable:-"NO"}
+qpidd_flags=${qpidd_flags:-""}
+qpidd_datadir=${qpidd_datadir:-"/var/lib/qpidd"}
+qpidd_piddir=${qpidd_piddir:-"/var/run/qpidd"}
+qpidd_configfile=${qpidd_configfile:-"/usr/local/etc/qpid/qpidd.conf"}
+qpidd_user="qpidd"
+qpidd_group="qpidd"
+start_postcmd="qpidd_dump_pidfile"
+
+load_rc_config "${name}"
+
+required_files="${qpidd_configfile}"
+
+# respect data & pid-dir from the config file if set.
+grep -q '^ *data-dir *=' $qpidd_configfile || qpidd_flags="${qpidd_flags} --data-dir=${qpidd_datadir}"
+grep -q '^ *pid-dir *=' $qpidd_configfile || qpidd_flags="${qpidd_flags} --pid-dir=${qpidd_piddir}"
+
+# Keep basic flags for dump-pidfile command
+basic_qpidd_flags="${qpidd_flags} --config ${qpidd_configfile}"
+
+# Add some more to real ones
+# We want stderr logging to immediately see if
+# something bombs
+qpidd_flags="${qpidd_flags} --daemon --log-to-stderr 1"
+
+qpidd_dump_pidfile() {
+	${command} ${basic_qpidd_flags} --check > $pidfile
+	[ $? != 0 ] && echo "Failed to check for pidfile" && exit 1
+}
+
+run_rc_command "$1"
