@@ -8,7 +8,7 @@ MASTER_SITES=	https://github.com/hercules-team/python-augeas/releases/download/v
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	python-augeas-${PORTVERSION}
 
-MAINTAINER=	lorne@cons.org.nz
+MAINTAINER=	johan@stromnet.se
 COMMENT=	Pure python bindings for augeas
 
 LICENSE=    GPLv2
