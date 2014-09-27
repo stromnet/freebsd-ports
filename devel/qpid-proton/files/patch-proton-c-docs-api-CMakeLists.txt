@@ -1,0 +1,11 @@
+--- proton-c/docs/api/CMakeLists.txt.bak	2012-10-24 18:37:27.000000000 +0000
++++ proton-c/docs/api/CMakeLists.txt	2014-09-27 09:44:37.000000000 +0000
+@@ -26,7 +26,7 @@
+ 
+   # HTML files are generated to ./html - put those in the install.
+   install (DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/html/"
+-           DESTINATION "${PROTON_SHARE}/docs/api-c"
++           DESTINATION "${SHARE_INSTALL_DIR}/doc/qpid-proton/api-c"
+            COMPONENT documentation
+            ${OPTIONAL_ARG})
+ 

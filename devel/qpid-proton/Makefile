@@ -69,7 +69,8 @@ USES+=python:build
 .endif
 
 .if ${PORT_OPTIONS:MDOXYGEN}
-MAKE_ARGS=all docs
+MAKE_ARGS= all docs
+PORTDOCS= api-c/*
 .endif
 
 post-patch:
