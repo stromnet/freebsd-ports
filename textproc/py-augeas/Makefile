@@ -2,20 +2,24 @@
 
 PORTNAME=	augeas
 PORTVERSION=	0.5.0
-PORTREVISION=	1
 CATEGORIES=	textproc python
-MASTER_SITES=	https://github.com/hercules-team/python-augeas/releases/download/v${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	python-augeas-${PORTVERSION}
 
 MAINTAINER=	johan@stromnet.se
-COMMENT=	Pure python bindings for augeas
+COMMENT=	Pure python bindings for Augeas
 
-LICENSE=    GPLv2
+LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libaugeas.so:${PORTSDIR}/textproc/augeas
 
-USES=python
-USE_PYTHON=distutils autoplist
+WRKSRC=		${WRKDIR}/${DISTNAME}
+USES=		python
+USE_PYTHON=	distutils autoplist
+USE_GITHUB=	yes
+GH_ACCOUNT=	hercules-team
+GH_PROJECT=	python-augeas
+GH_TAGNAME=	v0.5.0
 
 .include <bsd.port.mk>
