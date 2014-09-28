@@ -33,12 +33,10 @@ include/proton/type_compat.h
 include/proton/types.h
 include/proton/util.h
 include/proton/version.h
-lib/cmake/Proton/ProtonConfig.cmake
-lib/cmake/Proton/ProtonConfigVersion.cmake
 lib/libqpid-proton.so
 lib/libqpid-proton.so.2
 lib/libqpid-proton.so.2.0.0
-lib/pkgconfig/libqpid-proton.pc
+libdata/pkgconfig/libqpid-proton.pc
 %%PERL%%lib/proton/bindings/perl/cproton_perl.pm
 %%PERL%%lib/proton/bindings/perl/cproton_perl.so
 %%PERL%%lib/proton/bindings/perl/qpid/proton.pm
@@ -60,6 +58,8 @@ lib/pkgconfig/libqpid-proton.pc
 %%PYTHON%%lib/proton/bindings/python/proton.pyc
 %%PYTHON%%lib/proton/bindings/python/proton.pyo
 man/man1/proton.1.gz
+share/cmake/Modules/ProtonConfig.cmake
+share/cmake/Modules/ProtonConfigVersion.cmake
 share/proton-%%PORTVERSION%%/LICENSE
 share/proton-%%PORTVERSION%%/README
 share/proton-%%PORTVERSION%%/TODO
@@ -74,9 +74,6 @@ share/proton/examples/messenger/send.c
 %%JAVA%%%%JAVASHAREDIR%%/proton-j-%%PORTVERSION%%.jar
 %%JAVA%%%%JAVASHAREDIR%%/proton-j.jar
 @dirrmtry include/proton
-@dirrmtry lib/cmake/Proton
-@dirrmtry lib/cmake
-@dirrmtry lib/pkgconfig
 %%PERL%%@dirrmtry lib/proton/bindings/perl/qpid/proton
 %%PERL%%@dirrmtry lib/proton/bindings/perl/qpid
 %%PERL%%@dirrmtry lib/proton/bindings/perl
@@ -85,6 +82,8 @@ share/proton/examples/messenger/send.c
 @dirrmtry lib
 @dirrmtry man/man1
 @dirrmtry man
+@dirrmtry share/cmake/Modules
+@dirrmtry share/cmake
 @dirrmtry share/proton/examples/messenger/pncompat
 @dirrmtry share/proton/examples/messenger
 @dirrmtry share/proton/examples
