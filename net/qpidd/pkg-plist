@@ -101,8 +101,6 @@ include/qpid/types/Variant.h
 %%PYTHON%%%%PYTHON_SITELIBDIR%%/qpid_messaging.pyo
 %%RUBY%%%%RUBY_SITEARCHLIBDIR%%/cqmf2_ruby.so
 %%RUBY%%%%RUBY_SITEARCHLIBDIR%%/cqpid_ruby.so
-lib/cmake/Qpid/QpidConfig.cmake
-lib/cmake/Qpid/QpidConfigVersion.cmake
 lib/libqmf2.so
 lib/libqmf2.so.1
 lib/libqmf2.so.1.0.0
@@ -121,13 +119,13 @@ lib/libqpidmessaging.so.2.0.0
 lib/libqpidtypes.so
 lib/libqpidtypes.so.1
 lib/libqpidtypes.so.1.0.0
-lib/pkgconfig/qmf2.pc
-lib/pkgconfig/qpid.pc
 %%AMQP%%lib/qpid/daemon/amqp.so
 %%HA%%lib/qpid/daemon/ha.so
 lib/qpid/daemon/libstore.so
 lib/qpid/daemon/libstore.so.0.30
 %%XML%%lib/qpid/daemon/xml.so
+libdata/pkgconfig/qmf2.pc
+libdata/pkgconfig/qpid.pc
 libexec/qpid/tests/qpid-client-test
 libexec/qpid/tests/qpid-latency-test
 libexec/qpid/tests/qpid-perftest
@@ -140,6 +138,8 @@ libexec/qpid/tests/receiver
 libexec/qpid/tests/sender
 sbin/qpidd
 man/man1/qpidd.1.gz
+share/cmake/Modules/QpidConfig.cmake
+share/cmake/Modules/QpidConfigVersion.cmake
 share/qpid/examples/README.txt
 share/qpid/examples/messaging/CMakeLists.txt
 share/qpid/examples/messaging/OptionParser.cpp
@@ -170,15 +170,11 @@ share/qpid/examples/qmf2/print_events.cpp
 @dirrmtry include/qpid
 %%QMFGEN%%@dirrmtry %%PYTHON_SITELIBDIR%%/qmfgen/templates
 %%QMFGEN%%@dirrmtry %%PYTHON_SITELIBDIR%%/qmfgen
-@dirrmtry lib/cmake/Qpid
-@dirrmtry lib/cmake
-@dirrmtry lib/pkgconfig
 @dirrmtry lib/qpid/daemon
 @dirrmtry lib/qpid
-@dirrmtry lib
 @dirrmtry libexec/qpid/tests
-@dirrmtry man/man1
-@dirrmtry man
+@comment @dirrmtry share/cmake/Modules
+@comment @dirrmtry share/cmake
 @dirrmtry share/qpid/examples/messaging
 @dirrmtry share/qpid/examples/qmf2
 @dirrmtry share/qpid/examples
