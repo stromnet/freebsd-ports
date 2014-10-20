@@ -2,7 +2,7 @@
 # $FreeBSD: head/comms/owfs/Makefile 368126 2014-09-13 18:25:04Z tijl $
 
 PORTNAME=	owfs
-PORTVERSION=	2.9p7
+PORTVERSION=	2.9p8
 CATEGORIES=	comms
 MASTER_SITES=	SF/owfs/owfs/${PORTVERSION}
 
