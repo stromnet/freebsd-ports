@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/owfs/Makefile.options 365069 2014-08-16 09:15:17Z marino $
+# $FreeBSD: head/comms/owfs/Makefile.options 372286 2014-11-07 17:52:36Z ak $
 
 OPTIONS_DEFINE = \
 	OWDEBUG \

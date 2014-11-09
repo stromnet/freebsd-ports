@@ -1,5 +1,5 @@
 # Created by: Johan Strom <johna@stromnet.se>
-# $FreeBSD: head/comms/owfs/Makefile 368126 2014-09-13 18:25:04Z tijl $
+# $FreeBSD: head/comms/owfs/Makefile 372286 2014-11-07 17:52:36Z ak $
 
 PORTNAME=	owfs
 PORTVERSION=	2.9p8
@@ -128,7 +128,7 @@ post-install:
 .endif
 .if ${PORT_OPTIONS:MOWPERL}
 	@${RM} -f ${STAGEDIR}${PREFIX}/lib/perl5/${PERL_VER}/${PERL_ARCH}/perllocal.pod*
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/perl5/site_perl/5.16/mach/auto/OW/OW.so
+	${STRIP_CMD} ${STAGEDIR}${SITE_PERL}/${PERL_ARCH}/auto/OW/OW.so
 .endif
 
 .include <bsd.port.mk>
