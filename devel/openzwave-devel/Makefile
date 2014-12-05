@@ -1,7 +1,7 @@
 # Created by: Johan Strom <johna@stromnet.se>
 # $FreeBSD$
 
-SVN_REV=903
+SVN_REV=939
 PORTNAME=openzwave
 PORTVERSION=1.1.${SVN_REV}
 CATEGORIES= comms
@@ -44,7 +44,7 @@ do-fetch:
 .endif
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${LOCALBASE}/lib/libopenzwave.so.1.1
+	${STRIP_CMD} ${STAGEDIR}${LOCALBASE}/lib/libopenzwave.so.1.3
 	${STRIP_CMD} ${STAGEDIR}${LOCALBASE}/bin/MinOZW
 .if ! ${PORT_OPTIONS:MDOXYGEN}
 # If doxygen was installed in env, it was built anyway..

@@ -32,6 +32,7 @@ bin/MinOZW
 %%ETCDIR%%/device_classes.xsd
 %%ETCDIR%%/device_configuration.xsd
 %%ETCDIR%%/duwi/ZWES1000.xml
+%%ETCDIR%%/duwi/ZWESJ300.xml
 %%ETCDIR%%/eurotronic/eur_stellaz.xml
 %%ETCDIR%%/everspring/an145.xml
 %%ETCDIR%%/everspring/an158.xml
@@ -44,6 +45,8 @@ bin/MinOZW
 %%ETCDIR%%/everspring/st815.xml
 %%ETCDIR%%/everspring/tse03.xml
 %%ETCDIR%%/everspringct/hsm02.xml
+%%ETCDIR%%/evolve/lsm-15.xml
+%%ETCDIR%%/evolve/lrm-as.xml
 %%ETCDIR%%/fibaro/fgbs001.xml
 %%ETCDIR%%/fibaro/fgd211.xml
 %%ETCDIR%%/fibaro/fgfs101.xml
@@ -97,23 +100,27 @@ bin/MinOZW
 %%ETCDIR%%/remotec/zurc.xml
 %%ETCDIR%%/remotec/zxt-120.xml
 %%ETCDIR%%/schlagelink/itemp.xml
+%%ETCDIR%%/schlagelink/minikeypad.xml
 %%ETCDIR%%/trane/TZEMT400AB32MAA.xml
 %%ETCDIR%%/trane/TZEMT400BB32MAA.xml
 %%ETCDIR%%/vision/zm1601eu.xml
 %%ETCDIR%%/vision/zs5101eu.xml
 %%ETCDIR%%/vitrum/vitrumBS.xml
 %%ETCDIR%%/waynedalton/WDTC-20.xml
+%%ETCDIR%%/wenzhou/tsp01.xml
 %%ETCDIR%%/wenzhou/tz65d.xml
 %%ETCDIR%%/wenzhou/tz66d.xml
 %%ETCDIR%%/wenzhou/tz88.xml
 %%ETCDIR%%/zwave.me/ZME_05431.xml
 %%ETCDIR%%/zwave.me/ZME_06433.xml
 %%ETCDIR%%/zwave.me/ZME_06436.xml
+%%ETCDIR%%/zwave.me/ZME_064435.xml
 %%ETCDIR%%/zwave.me/ZME_WCD2.xml
 %%ETCDIR%%/zwave.me/iTemp.xml
 %%ETCDIR%%/zwave.me/kfob.xml
 %%ETCDIR%%/zwcfg.xsd
 %%ETCDIR%%/zwscene.xsd
+%%ETCDIR%%/qubino/ZMNHJA2.xml
 include/openzwave/Bitfield.h
 include/openzwave/Defs.h
 include/openzwave/DoxygenMain.h
@@ -217,44 +224,44 @@ include/openzwave/value_classes/ValueShort.h
 include/openzwave/value_classes/ValueStore.h
 include/openzwave/value_classes/ValueString.h
 lib/libopenzwave.so
-lib/libopenzwave.so.1.1
-@dirrmtry %%ETCDIR%%/2gig
-@dirrmtry %%ETCDIR%%/BeNext
-@dirrmtry %%ETCDIR%%/act
-@dirrmtry %%ETCDIR%%/aeon_labs
-@dirrmtry %%ETCDIR%%/assa_abloy
-@dirrmtry %%ETCDIR%%/danfoss
-@dirrmtry %%ETCDIR%%/duwi
-@dirrmtry %%ETCDIR%%/eurotronic
-@dirrmtry %%ETCDIR%%/everspring
-@dirrmtry %%ETCDIR%%/everspringct
-@dirrmtry %%ETCDIR%%/fibaro
-@dirrmtry %%ETCDIR%%/frostdale
-@dirrmtry %%ETCDIR%%/ge
-@dirrmtry %%ETCDIR%%/greenwave
-@dirrmtry %%ETCDIR%%/homeseer
-@dirrmtry %%ETCDIR%%/honeywell
-@dirrmtry %%ETCDIR%%/horstmann
-@dirrmtry %%ETCDIR%%/intermatic
-@dirrmtry %%ETCDIR%%/leviton
-@dirrmtry %%ETCDIR%%/northq
-@dirrmtry %%ETCDIR%%/philio
-@dirrmtry %%ETCDIR%%/qees
-@dirrmtry %%ETCDIR%%/qubino
-@dirrmtry %%ETCDIR%%/rcs
-@dirrmtry %%ETCDIR%%/remotec
-@dirrmtry %%ETCDIR%%/schlagelink
-@dirrmtry %%ETCDIR%%/trane
-@dirrmtry %%ETCDIR%%/vision
-@dirrmtry %%ETCDIR%%/vitrum
-@dirrmtry %%ETCDIR%%/waynedalton
-@dirrmtry %%ETCDIR%%/wenzhou
-@dirrmtry %%ETCDIR%%/zwave.me
-@dirrmtry %%ETCDIR%%
-@dirrmtry include/openzwave/aes
-@dirrmtry include/openzwave/command_classes
-@dirrmtry include/openzwave/platform/unix
-@dirrmtry include/openzwave/platform
-@dirrmtry include/openzwave/value_classes
-@dirrmtry include/openzwave
-@dirrmtry lib/pkgconfig
+lib/libopenzwave.so.1.3
+@dir %%ETCDIR%%/2gig
+@dir %%ETCDIR%%/BeNext
+@dir %%ETCDIR%%/act
+@dir %%ETCDIR%%/aeon_labs
+@dir %%ETCDIR%%/assa_abloy
+@dir %%ETCDIR%%/danfoss
+@dir %%ETCDIR%%/duwi
+@dir %%ETCDIR%%/eurotronic
+@dir %%ETCDIR%%/everspring
+@dir %%ETCDIR%%/everspringct
+@dir %%ETCDIR%%/fibaro
+@dir %%ETCDIR%%/frostdale
+@dir %%ETCDIR%%/ge
+@dir %%ETCDIR%%/greenwave
+@dir %%ETCDIR%%/homeseer
+@dir %%ETCDIR%%/honeywell
+@dir %%ETCDIR%%/horstmann
+@dir %%ETCDIR%%/intermatic
+@dir %%ETCDIR%%/leviton
+@dir %%ETCDIR%%/northq
+@dir %%ETCDIR%%/philio
+@dir %%ETCDIR%%/qees
+@dir %%ETCDIR%%/qubino
+@dir %%ETCDIR%%/rcs
+@dir %%ETCDIR%%/remotec
+@dir %%ETCDIR%%/schlagelink
+@dir %%ETCDIR%%/trane
+@dir %%ETCDIR%%/vision
+@dir %%ETCDIR%%/vitrum
+@dir %%ETCDIR%%/waynedalton
+@dir %%ETCDIR%%/wenzhou
+@dir %%ETCDIR%%/zwave.me
+@dir %%ETCDIR%%
+@dir include/openzwave/aes
+@dir include/openzwave/command_classes
+@dir include/openzwave/platform/unix
+@dir include/openzwave/platform
+@dir include/openzwave/value_classes
+@dir include/openzwave
+@dir lib/pkgconfig
