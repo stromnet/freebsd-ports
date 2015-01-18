@@ -1,9 +1,9 @@
 # Created by: Johan Strom <johna@stromnet.se>
-# $FreeBSD: head/comms/owfs/Makefile 374896 2014-12-18 11:40:00Z bapt $
+# $FreeBSD: head/comms/owfs/Makefile 375258 2014-12-22 18:37:57Z pawel $
 
 PORTNAME=	owfs
 PORTVERSION=	2.9p8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	SF/owfs/owfs/${PORTVERSION}
 
@@ -12,7 +12,7 @@ COMMENT=	OWFS -- 1-Wire file system
 
 LICENSE=	GPLv2
 
-USES=		autoreconf libtool
+USES=		autoreconf libtool gmake:lite
 
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip

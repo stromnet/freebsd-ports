@@ -1,4 +1,4 @@
-# $FreeBSD: head/comms/owfs/Makefile.options 372286 2014-11-07 17:52:36Z ak $
+# $FreeBSD: head/comms/owfs/Makefile.options 375258 2014-12-22 18:37:57Z pawel $
 
 OPTIONS_DEFINE = \
 	OWDEBUG \
@@ -41,7 +41,7 @@ OWTRAFFIC_DESC=		Enable debug bus traffic reports
 OWTAP_DESC=		Enable owtap module (X11)
 OWMON_DESC=		Enable owmon module (X11)
 OWCAPI_DESC=		Enable C API
-OWPERL_DESC=		Enable Perl binding
+OWPERL_DESC=		Enable Perl binding (BROKEN)
 OWPHP_DESC=		Enable PHP binding (BROKEN)
 OWPYTHON_DESC=		Enable Python binding 
 OWTCL_DESC=		Enable TCL binding
