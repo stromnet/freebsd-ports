@@ -1,10 +1,9 @@
-# $FreeBSD$
+# $FreeBSD: head/textproc/py-python-augeas/Makefile 376043 2015-01-02 11:39:52Z koobs $
 
-PORTNAME=	augeas
+PORTNAME=	python-augeas
 PORTVERSION=	0.5.0
 CATEGORIES=	textproc python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	python-augeas-${PORTVERSION}
 
 MAINTAINER=	johan@stromnet.se
 COMMENT=	Pure python bindings for Augeas
@@ -14,12 +13,15 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libaugeas.so:${PORTSDIR}/textproc/augeas
 
-WRKSRC=		${WRKDIR}/${DISTNAME}
 USES=		python
-USE_PYTHON=	distutils autoplist
 USE_GITHUB=	yes
+USE_PYTHON=	distutils autoplist
+
 GH_ACCOUNT=	hercules-team
-GH_PROJECT=	python-augeas
+GH_COMMIT=	dcb4a60
 GH_TAGNAME=	v0.5.0
+
+regression-test: build
+	@cd ${WRKSRC} && ${PYTHON_CMD} ${WRKSRC}/test/test_augeas.py
 
 .include <bsd.port.mk>
