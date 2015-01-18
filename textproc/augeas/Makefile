@@ -2,8 +2,7 @@
 # $FreeBSD: head/textproc/augeas/Makefile 368000 2014-09-12 02:25:04Z swills $
 
 PORTNAME=	augeas
-PORTVERSION=	1.2.0
-PORTREVISION=	3
+PORTVERSION=	1.3.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.augeas.net/
 
