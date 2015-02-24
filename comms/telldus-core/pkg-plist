@@ -1,10 +1,11 @@
 bin/tdtool
+@mode 775
+@owner nobody
 @group dialer
-@mode 664
-@exec mkdir -p /var/telldus && chown nobody:dialer /var/telldus
-@exec [ -f /var/telldus/telldus-core.conf ] || touch /var/telldus/telldus-core.conf && chown nobody:dialer %D/var/telldus/telldus-core.conf
+@dir /var/telldus
+@exec [ -f /var/telldus/telldus-core.conf ] || touch /var/telldus/telldus-core.conf && chown nobody:dialer /var/telldus/telldus-core.conf
 @unexec if [ ! -s /var/telldus/telldus-core.conf ]; then rm -vf /var/telldus/telldus-core.conf; fi
-@unexec rmdir /var/telldus >/dev/null 2>&1 || :
+@mode 664
 @sample etc/tellstick.conf.sample
 @group
 @mode
