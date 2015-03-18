@@ -1,5 +1,6 @@
 bin/MinOZW
 %%ETCDIR%%/2gig/ct100.xml
+%%ETCDIR%%/2gig/ct101.xml
 %%ETCDIR%%/2gig/ct30.xml
 %%ETCDIR%%/BeNext/1poleswitch.xml
 %%ETCDIR%%/BeNext/2poleswitch.xml
@@ -8,6 +9,7 @@ bin/MinOZW
 %%ETCDIR%%/BeNext/DoorSensor.xml
 %%ETCDIR%%/BeNext/EnergySwitch.xml
 %%ETCDIR%%/BeNext/Molite.xml
+%%ETCDIR%%/BeNext/SceneController.xml
 %%ETCDIR%%/BeNext/PluginDimmer.xml
 %%ETCDIR%%/BeNext/TagReader.xml
 %%ETCDIR%%/act/lfm20.xml
@@ -25,6 +27,7 @@ bin/MinOZW
 %%ETCDIR%%/aeon_labs/minimote.xml
 %%ETCDIR%%/aeon_labs/recessed_doorsensor.xml
 %%ETCDIR%%/aeon_labs/ses.xml
+%%ETCDIR%%/aeon_labs/ses2.xml
 %%ETCDIR%%/assa_abloy/RealLivingCapTouch.xml
 %%ETCDIR%%/danfoss/living.xml
 %%ETCDIR%%/danfoss/z.xml
@@ -45,6 +48,7 @@ bin/MinOZW
 %%ETCDIR%%/everspring/st815.xml
 %%ETCDIR%%/everspring/tse03.xml
 %%ETCDIR%%/everspringct/hsm02.xml
+%%ETCDIR%%/evolve/ltm-5.xml
 %%ETCDIR%%/evolve/lsm-15.xml
 %%ETCDIR%%/evolve/lrm-as.xml
 %%ETCDIR%%/fibaro/fgbs001.xml
@@ -70,6 +74,7 @@ bin/MinOZW
 %%ETCDIR%%/honeywell/th8320zw1000.xml
 %%ETCDIR%%/horstmann/hrt4zw.xml
 %%ETCDIR%%/intermatic/ca8900.xml
+%%ETCDIR%%/iris/rangeextender.xml
 %%ETCDIR%%/leviton/rzi10.xml
 %%ETCDIR%%/leviton/vrcpg.xml
 %%ETCDIR%%/leviton/vrf01.xml
@@ -92,11 +97,13 @@ bin/MinOZW
 %%ETCDIR%%/qubino/ZMNHBA2.xml
 %%ETCDIR%%/qubino/ZMNHCA2.xml
 %%ETCDIR%%/qubino/ZMNHDA2.xml
+%%ETCDIR%%/qubino/ZMNHIA2.xml
 %%ETCDIR%%/rcs/em52-zw.xml
 %%ETCDIR%%/rcs/pm12-zw.xml
 %%ETCDIR%%/rcs/therm0005.xml
 %%ETCDIR%%/rcs/therm0007.xml
 %%ETCDIR%%/rcs/therm0009.xml
+%%ETCDIR%%/remotec/zfm-80.xml
 %%ETCDIR%%/remotec/zurc.xml
 %%ETCDIR%%/remotec/zxt-120.xml
 %%ETCDIR%%/schlagelink/itemp.xml
@@ -104,12 +111,14 @@ bin/MinOZW
 %%ETCDIR%%/trane/TZEMT400AB32MAA.xml
 %%ETCDIR%%/trane/TZEMT400BB32MAA.xml
 %%ETCDIR%%/vision/zm1601eu.xml
+%%ETCDIR%%/vision/zp3102.xml
 %%ETCDIR%%/vision/zs5101eu.xml
 %%ETCDIR%%/vitrum/vitrumBS.xml
 %%ETCDIR%%/waynedalton/WDTC-20.xml
 %%ETCDIR%%/wenzhou/tsp01.xml
 %%ETCDIR%%/wenzhou/tz65d.xml
 %%ETCDIR%%/wenzhou/tz66d.xml
+%%ETCDIR%%/wenzhou/tz67.xml
 %%ETCDIR%%/wenzhou/tz88.xml
 %%ETCDIR%%/zwave.me/ZME_05431.xml
 %%ETCDIR%%/zwave.me/ZME_06433.xml
@@ -131,6 +140,7 @@ include/openzwave/Msg.h
 include/openzwave/Node.h
 include/openzwave/Notification.h
 include/openzwave/Options.h
+include/openzwave/OZWException.h
 include/openzwave/Scene.h
 include/openzwave/Utils.h
 include/openzwave/aes/aes.h
@@ -146,6 +156,7 @@ include/openzwave/command_classes/AssociationCommandConfiguration.h
 include/openzwave/command_classes/Basic.h
 include/openzwave/command_classes/BasicWindowCovering.h
 include/openzwave/command_classes/Battery.h
+include/openzwave/command_classes/CentralScene.h
 include/openzwave/command_classes/CRC16Encap.h
 include/openzwave/command_classes/ClimateControlSchedule.h
 include/openzwave/command_classes/Clock.h

@@ -1,46 +1,40 @@
 # Created by: Johan Strom <johna@stromnet.se>
 # $FreeBSD$
 
-SVN_REV=939
+# echo $(git describe --long --tags --dirty 2>/dev/null | sed s/^v//) | awk '{split($$0,a,"-"); print a[2]}'
+VERSION_REV=102
+
 PORTNAME=openzwave
-PORTVERSION=1.1.${SVN_REV}
-CATEGORIES= comms
-MASTER_SITES= ${MASTER_SITE_LOCAL}
-PKGNAMESUFFIX=  -devel
+PORTVERSION=1.3.${VERSION_REV}
+CATEGORIES=	comms
+PKGNAMESUFFIX=	-devel
 
 MAINTAINER=johan@stromnet.se
 COMMENT=Open-zwave - An open-source interface to Z-Wave networks
 
 LICENSE=LGPL20
 
+USE_GITHUB=yes
+GH_ACCOUNT=OpenZWave
+GH_COMMIT=b57775f
+GH_TAGNAME=	${GH_COMMIT}
+GH_PROJECT=open-zwave
+
 USES=gmake tar:bz2 iconv
 
-OPTIONS_DEFINE= DOXYGEN
+OPTIONS_DEFINE=	DOXYGEN
 OPTIONS_DEFAULT=
 OPTIONS_SUB=yes
 
-PLIST_SUB= PORTVERSION=${PORTVERSION}
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
-DOXYGEN_DESCR= Build docs (requires doxygen + graphviz)
-DOXYGEN_BUILD_DEPENDS= doxygen:${PORTSDIR}/devel/doxygen dot:${PORTSDIR}/graphics/graphviz
+DOXYGEN_DESCR=	Build docs (requires doxygen + graphviz)
+DOXYGEN_BUILD_DEPENDS=	doxygen:${PORTSDIR}/devel/doxygen dot:${PORTSDIR}/graphics/graphviz
 
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MDOXYGEN}
 PORTDOCS=api/* default.htm general/* images+css/*
-.endif
-
-# Updating to new rev:
-# make do-fetch BOOTSTRAP=YES
-# make makesum
-.if defined(BOOTSTRAP)
-FETCH_DEPENDS = svn:${PORTSDIR}/devel/subversion
-
-do-fetch:
-	${MKDIR} ${WRKDIR}
-	svn export -r ${SVN_REV} \
-		http://open-zwave.googlecode.com/svn/trunk/ ${WRKSRC}
-	cd ${WRKDIR}; tar cvfy ${DISTDIR}/${DISTNAME}.tar.bz2 ${DISTNAME}
 .endif
 
 post-install:
@@ -54,6 +48,6 @@ post-install:
 	${RM} ${STAGEDIR}${DOCSDIR}/Doxyfile.in
 .endif
 
-MAKE_ARGS=VERSION_REV=${SVN_REV} LIBDIR=${WRKSRC} docdir=$(DOCSDIR)
+MAKE_ARGS=VERSION_REV=${VERSION_REV} LIBDIR=${WRKSRC} docdir=$(DOCSDIR)
 
 .include <bsd.port.mk>
