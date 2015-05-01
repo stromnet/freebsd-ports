@@ -1,8 +1,9 @@
 # Created by: Russell Jackson <raj@csub.edu>
-# $FreeBSD: head/textproc/augeas/Makefile 368000 2014-09-12 02:25:04Z swills $
+# $FreeBSD: head/textproc/augeas/Makefile 384225 2015-04-18 12:58:34Z tijl $
 
 PORTNAME=	augeas
 PORTVERSION=	1.3.0
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.augeas.net/
 
@@ -14,11 +15,9 @@ LICENSE=	LGPL21
 TEST_DEPENDS=	bash:${PORTSDIR}/shells/bash \
 		gsed:${PORTSDIR}/textproc/gsed
 
+GNU_CONFIGURE=	yes
+USES=		autoreconf gmake libtool pkgconfig readline
 USE_GNOME=	libxml2
-USES=		gmake libtool pkgconfig readline
-USE_AUTOTOOLS=	autoconf aclocal autoheader automake libtoolize:env
-ACLOCAL_ARGS=	-I . -I gnulib/m4 -I ${LOCALBASE}/share/aclocal
-AUTOMAKE_ARGS=	--add-missing
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip
 
