@@ -2,11 +2,12 @@
 # $FreeBSD$
 
 # echo $(git describe --long --tags --dirty 2>/dev/null | sed s/^v//) | awk '{split($$0,a,"-"); print a[2]}'
-VERSION_REV=102
+VERSION_REV=564
 
 PORTNAME=openzwave
 PORTVERSION=1.3.${VERSION_REV}
-CATEGORIES=	comms
+#CATEGORIES=	comms
+CATEGORIES=	devel
 PKGNAMESUFFIX=	-devel
 
 MAINTAINER=johan@stromnet.se
@@ -16,11 +17,11 @@ LICENSE=LGPL20
 
 USE_GITHUB=yes
 GH_ACCOUNT=OpenZWave
-GH_COMMIT=b57775f
-GH_TAGNAME=	${GH_COMMIT}
 GH_PROJECT=open-zwave
+#GH_COMMIT=ce39511
+GH_TAGNAME=	ce39511
 
-USES=gmake tar:bz2 iconv
+USES=gmake tar:bz2 iconv pkgconfig
 
 OPTIONS_DEFINE=	DOXYGEN
 OPTIONS_DEFAULT=

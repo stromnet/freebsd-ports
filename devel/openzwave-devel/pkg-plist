@@ -1,4 +1,5 @@
 bin/MinOZW
+bin/ozw_config
 %%ETCDIR%%/2gig/ct100.xml
 %%ETCDIR%%/2gig/ct101.xml
 %%ETCDIR%%/2gig/ct30.xml
@@ -8,9 +9,10 @@ bin/MinOZW
 %%ETCDIR%%/BeNext/BuiltinDimmer.xml
 %%ETCDIR%%/BeNext/DoorSensor.xml
 %%ETCDIR%%/BeNext/EnergySwitch.xml
+%%ETCDIR%%/BeNext/HeatingControl.xml
 %%ETCDIR%%/BeNext/Molite.xml
-%%ETCDIR%%/BeNext/SceneController.xml
 %%ETCDIR%%/BeNext/PluginDimmer.xml
+%%ETCDIR%%/BeNext/SceneController.xml
 %%ETCDIR%%/BeNext/TagReader.xml
 %%ETCDIR%%/act/lfm20.xml
 %%ETCDIR%%/act/zdm230.xml
@@ -19,40 +21,67 @@ bin/MinOZW
 %%ETCDIR%%/act/zir010.xml
 %%ETCDIR%%/act/zrp110.xml
 %%ETCDIR%%/act/zrw103.xml
-%%ETCDIR%%/aeon_labs/alms.xml
-%%ETCDIR%%/aeon_labs/doorwindow.xml
-%%ETCDIR%%/aeon_labs/hem.xml
-%%ETCDIR%%/aeon_labs/hemg2.xml
-%%ETCDIR%%/aeon_labs/keyfob.xml
-%%ETCDIR%%/aeon_labs/minimote.xml
-%%ETCDIR%%/aeon_labs/recessed_doorsensor.xml
-%%ETCDIR%%/aeon_labs/ses.xml
-%%ETCDIR%%/aeon_labs/ses2.xml
+%%ETCDIR%%/aeotec/alms.xml
+%%ETCDIR%%/aeotec/doorbell_gen5.xml
+%%ETCDIR%%/aeotec/doorwindow.xml
+%%ETCDIR%%/aeotec/drycontactsensor.xml
+%%ETCDIR%%/aeotec/dsd31.xml
+%%ETCDIR%%/aeotec/hdss_gen5.xml
+%%ETCDIR%%/aeotec/hem.xml
+%%ETCDIR%%/aeotec/hemg2.xml
+%%ETCDIR%%/aeotec/keyfob.xml
+%%ETCDIR%%/aeotec/keyfob2.xml
+%%ETCDIR%%/aeotec/ledbulb.xml
+%%ETCDIR%%/aeotec/minimote.xml
+%%ETCDIR%%/aeotec/msesv2.xml
+%%ETCDIR%%/aeotec/multisensor6.xml
+%%ETCDIR%%/aeotec/multisensor_gen5.xml
+%%ETCDIR%%/aeotec/panicbtn.xml
+%%ETCDIR%%/aeotec/recessed_doorsensor.xml
+%%ETCDIR%%/aeotec/recessed_doorsensor_gen5.xml
+%%ETCDIR%%/aeotec/sd6.xml
+%%ETCDIR%%/aeotec/ses.xml
+%%ETCDIR%%/aeotec/ses2.xml
+%%ETCDIR%%/aeotec/ss6.xml
+%%ETCDIR%%/aeotec/watersensor.xml
+%%ETCDIR%%/aeotec/zstickgen5.xml
 %%ETCDIR%%/assa_abloy/RealLivingCapTouch.xml
+%%ETCDIR%%/cooper/RF9505-T.xml
+%%ETCDIR%%/cooper/RF9540-N.xml
 %%ETCDIR%%/danfoss/living.xml
 %%ETCDIR%%/danfoss/z.xml
 %%ETCDIR%%/device_classes.xml
 %%ETCDIR%%/device_classes.xsd
 %%ETCDIR%%/device_configuration.xsd
+%%ETCDIR%%/dlink/dch-z110.xml
+%%ETCDIR%%/dragontech/wd-100.xml
 %%ETCDIR%%/duwi/ZWES1000.xml
 %%ETCDIR%%/duwi/ZWESJ300.xml
+%%ETCDIR%%/enerwave/zwn-sc7.xml
 %%ETCDIR%%/eurotronic/eur_stellaz.xml
+%%ETCDIR%%/everspring/ad146.xml
+%%ETCDIR%%/everspring/ad147.xml
 %%ETCDIR%%/everspring/an145.xml
 %%ETCDIR%%/everspring/an158.xml
+%%ETCDIR%%/everspring/an179.xml
+%%ETCDIR%%/everspring/an180.xml
+%%ETCDIR%%/everspring/hsp02.xml
 %%ETCDIR%%/everspring/se812.xml
 %%ETCDIR%%/everspring/sf812.xml
 %%ETCDIR%%/everspring/sm103.xml
 %%ETCDIR%%/everspring/sp103.xml
 %%ETCDIR%%/everspring/sp814.xml
+%%ETCDIR%%/everspring/st812.xml
 %%ETCDIR%%/everspring/st814.xml
 %%ETCDIR%%/everspring/st815.xml
 %%ETCDIR%%/everspring/tse03.xml
 %%ETCDIR%%/everspringct/hsm02.xml
-%%ETCDIR%%/evolve/ltm-5.xml
-%%ETCDIR%%/evolve/lsm-15.xml
 %%ETCDIR%%/evolve/lrm-as.xml
+%%ETCDIR%%/evolve/lsm-15.xml
+%%ETCDIR%%/evolve/ltm-5.xml
 %%ETCDIR%%/fibaro/fgbs001.xml
 %%ETCDIR%%/fibaro/fgd211.xml
+%%ETCDIR%%/fibaro/fgd212.xml
 %%ETCDIR%%/fibaro/fgfs101.xml
 %%ETCDIR%%/fibaro/fgk001.xml
 %%ETCDIR%%/fibaro/fgms.xml
@@ -60,7 +89,10 @@ bin/MinOZW
 %%ETCDIR%%/fibaro/fgrgbwm441.xml
 %%ETCDIR%%/fibaro/fgrm222.xml
 %%ETCDIR%%/fibaro/fgs211.xml
+%%ETCDIR%%/fibaro/fgs212.xml
 %%ETCDIR%%/fibaro/fgs221.xml
+%%ETCDIR%%/fibaro/fgs222.xml
+%%ETCDIR%%/fibaro/fgsd002.xml
 %%ETCDIR%%/fibaro/fgss101.xml
 %%ETCDIR%%/fibaro/fgwpe.xml
 %%ETCDIR%%/frostdale/fdn2nxx.xml
@@ -69,7 +101,9 @@ bin/MinOZW
 %%ETCDIR%%/ge/relay.xml
 %%ETCDIR%%/greenwave/powernode1.xml
 %%ETCDIR%%/greenwave/powernode6.xml
+%%ETCDIR%%/homeseer/ezmotionplus.xml
 %%ETCDIR%%/homeseer/hsm100.xml
+%%ETCDIR%%/homeseer/hsm200.xml
 %%ETCDIR%%/homeseer/ztroller.xml
 %%ETCDIR%%/honeywell/th8320zw1000.xml
 %%ETCDIR%%/horstmann/hrt4zw.xml
@@ -80,24 +114,43 @@ bin/MinOZW
 %%ETCDIR%%/leviton/vrf01.xml
 %%ETCDIR%%/leviton/vri06.xml
 %%ETCDIR%%/leviton/vri10.xml
+%%ETCDIR%%/linear/PD300Z-2.xml
+%%ETCDIR%%/linear/WD500Z-1.xml
 %%ETCDIR%%/manufacturer_specific.xml
 %%ETCDIR%%/manufacturer_specific.xsd
+%%ETCDIR%%/mcohome/mhs311.xml
+%%ETCDIR%%/mcohome/mhs312.xml
+%%ETCDIR%%/mcohome/mhs314.xml
+%%ETCDIR%%/mcohome/mhs411.xml
+%%ETCDIR%%/mcohome/mhs412.xml
+%%ETCDIR%%/mcohome/mhs513.xml
+%%ETCDIR%%/merten/50x5xx.xml
+%%ETCDIR%%/nodon/asp3100SmartPlug.xml
+%%ETCDIR%%/nodon/crc3100OctanRemote.xml
+%%ETCDIR%%/nodon/cws3101wallswitch.xml
 %%ETCDIR%%/northq/nq92021.xml
 %%ETCDIR%%/options.xml
 %%ETCDIR%%/options.xsd
 %%ETCDIR%%/philio/pan04.xml
 %%ETCDIR%%/philio/psm02.xml
+%%ETCDIR%%/philio/pst02-1c.xml
+%%ETCDIR%%/philio/pst02-b.xml
+%%ETCDIR%%/philio/pst02.xml
+%%ETCDIR%%/polycontrol/doorlock.xml
+%%ETCDIR%%/polycontrol/keypad.xml
+%%ETCDIR%%/polycontrol/polylock.xml
 %%ETCDIR%%/popp/123580.xml
 %%ETCDIR%%/popp/123601.xml
 %%ETCDIR%%/popp/123658.xml
 %%ETCDIR%%/qees/reto-plugin-switch.xml
-%%ETCDIR%%/zipato/MiniKeypad.xml
-%%ETCDIR%%/zipato/RGBBulb.xml
 %%ETCDIR%%/qubino/ZMNHAA2.xml
+%%ETCDIR%%/qubino/ZMNHAD1.xml
 %%ETCDIR%%/qubino/ZMNHBA2.xml
+%%ETCDIR%%/qubino/ZMNHBD2.xml
 %%ETCDIR%%/qubino/ZMNHCA2.xml
 %%ETCDIR%%/qubino/ZMNHDA2.xml
 %%ETCDIR%%/qubino/ZMNHIA2.xml
+%%ETCDIR%%/qubino/ZMNHJA2.xml
 %%ETCDIR%%/rcs/em52-zw.xml
 %%ETCDIR%%/rcs/pm12-zw.xml
 %%ETCDIR%%/rcs/therm0005.xml
@@ -106,30 +159,43 @@ bin/MinOZW
 %%ETCDIR%%/remotec/zfm-80.xml
 %%ETCDIR%%/remotec/zurc.xml
 %%ETCDIR%%/remotec/zxt-120.xml
+%%ETCDIR%%/schlage/BE469NXCEN.xml
 %%ETCDIR%%/schlagelink/itemp.xml
 %%ETCDIR%%/schlagelink/minikeypad.xml
+%%ETCDIR%%/swiid/swiidinter.xml
+%%ETCDIR%%/swiid/swiidplug.xml
+%%ETCDIR%%/thermofloor/multireg.xml
 %%ETCDIR%%/trane/TZEMT400AB32MAA.xml
 %%ETCDIR%%/trane/TZEMT400BB32MAA.xml
+%%ETCDIR%%/vision/cp3102.xml
+%%ETCDIR%%/vision/zd2102.xml
 %%ETCDIR%%/vision/zm1601eu.xml
+%%ETCDIR%%/vision/zm1602eu.xml
 %%ETCDIR%%/vision/zp3102.xml
 %%ETCDIR%%/vision/zs5101eu.xml
 %%ETCDIR%%/vitrum/vitrumBS.xml
 %%ETCDIR%%/waynedalton/WDTC-20.xml
+%%ETCDIR%%/wenzhou/sm103.xml
 %%ETCDIR%%/wenzhou/tsp01.xml
 %%ETCDIR%%/wenzhou/tz65d.xml
 %%ETCDIR%%/wenzhou/tz66d.xml
 %%ETCDIR%%/wenzhou/tz67.xml
+%%ETCDIR%%/wenzhou/tz68.xml
 %%ETCDIR%%/wenzhou/tz88.xml
+%%ETCDIR%%/widom/UBS104.xml
+%%ETCDIR%%/widom/UME304C_S.xml
+%%ETCDIR%%/zipato/MiniKeypad.xml
+%%ETCDIR%%/zipato/RGBBulb.xml
 %%ETCDIR%%/zwave.me/ZME_05431.xml
 %%ETCDIR%%/zwave.me/ZME_06433.xml
 %%ETCDIR%%/zwave.me/ZME_06436.xml
 %%ETCDIR%%/zwave.me/ZME_064435.xml
+%%ETCDIR%%/zwave.me/ZME_WALLC-S.xml
 %%ETCDIR%%/zwave.me/ZME_WCD2.xml
 %%ETCDIR%%/zwave.me/iTemp.xml
 %%ETCDIR%%/zwave.me/kfob.xml
 %%ETCDIR%%/zwcfg.xsd
 %%ETCDIR%%/zwscene.xsd
-%%ETCDIR%%/qubino/ZMNHJA2.xml
 include/openzwave/Bitfield.h
 include/openzwave/Defs.h
 include/openzwave/DoxygenMain.h
@@ -139,10 +205,11 @@ include/openzwave/Manager.h
 include/openzwave/Msg.h
 include/openzwave/Node.h
 include/openzwave/Notification.h
-include/openzwave/Options.h
 include/openzwave/OZWException.h
+include/openzwave/Options.h
 include/openzwave/Scene.h
 include/openzwave/Utils.h
+include/openzwave/ZWSecurity.h
 include/openzwave/aes/aes.h
 include/openzwave/aes/aescpp.h
 include/openzwave/aes/aesopt.h
@@ -156,14 +223,16 @@ include/openzwave/command_classes/AssociationCommandConfiguration.h
 include/openzwave/command_classes/Basic.h
 include/openzwave/command_classes/BasicWindowCovering.h
 include/openzwave/command_classes/Battery.h
-include/openzwave/command_classes/CentralScene.h
 include/openzwave/command_classes/CRC16Encap.h
+include/openzwave/command_classes/CentralScene.h
 include/openzwave/command_classes/ClimateControlSchedule.h
 include/openzwave/command_classes/Clock.h
+include/openzwave/command_classes/Color.h
 include/openzwave/command_classes/CommandClass.h
 include/openzwave/command_classes/CommandClasses.h
 include/openzwave/command_classes/Configuration.h
 include/openzwave/command_classes/ControllerReplication.h
+include/openzwave/command_classes/DeviceResetLocally.h
 include/openzwave/command_classes/DoorLock.h
 include/openzwave/command_classes/DoorLockLogging.h
 include/openzwave/command_classes/EnergyProduction.h
@@ -201,6 +270,7 @@ include/openzwave/command_classes/TimeParameters.h
 include/openzwave/command_classes/UserCode.h
 include/openzwave/command_classes/Version.h
 include/openzwave/command_classes/WakeUp.h
+include/openzwave/command_classes/ZWavePlusInfo.h
 include/openzwave/platform/Controller.h
 include/openzwave/platform/Event.h
 include/openzwave/platform/FileOps.h
@@ -236,16 +306,22 @@ include/openzwave/value_classes/ValueStore.h
 include/openzwave/value_classes/ValueString.h
 lib/libopenzwave.so
 lib/libopenzwave.so.1.3
+libdata/pkgconfig/libopenzwave.pc
 @dir %%ETCDIR%%/2gig
 @dir %%ETCDIR%%/BeNext
 @dir %%ETCDIR%%/act
-@dir %%ETCDIR%%/aeon_labs
+@dir %%ETCDIR%%/aeotec
 @dir %%ETCDIR%%/assa_abloy
+@dir %%ETCDIR%%/cooper
 @dir %%ETCDIR%%/danfoss
+@dir %%ETCDIR%%/dlink
+@dir %%ETCDIR%%/dragontech
 @dir %%ETCDIR%%/duwi
+@dir %%ETCDIR%%/enerwave
 @dir %%ETCDIR%%/eurotronic
 @dir %%ETCDIR%%/everspring
 @dir %%ETCDIR%%/everspringct
+@dir %%ETCDIR%%/evolve
 @dir %%ETCDIR%%/fibaro
 @dir %%ETCDIR%%/frostdale
 @dir %%ETCDIR%%/ge
@@ -254,19 +330,31 @@ lib/libopenzwave.so.1.3
 @dir %%ETCDIR%%/honeywell
 @dir %%ETCDIR%%/horstmann
 @dir %%ETCDIR%%/intermatic
+@dir %%ETCDIR%%/iris
 @dir %%ETCDIR%%/leviton
+@dir %%ETCDIR%%/linear
+@dir %%ETCDIR%%/mcohome
+@dir %%ETCDIR%%/merten
+@dir %%ETCDIR%%/nodon
 @dir %%ETCDIR%%/northq
 @dir %%ETCDIR%%/philio
+@dir %%ETCDIR%%/polycontrol
+@dir %%ETCDIR%%/popp
 @dir %%ETCDIR%%/qees
 @dir %%ETCDIR%%/qubino
 @dir %%ETCDIR%%/rcs
 @dir %%ETCDIR%%/remotec
+@dir %%ETCDIR%%/schlage
 @dir %%ETCDIR%%/schlagelink
+@dir %%ETCDIR%%/swiid
+@dir %%ETCDIR%%/thermofloor
 @dir %%ETCDIR%%/trane
 @dir %%ETCDIR%%/vision
 @dir %%ETCDIR%%/vitrum
 @dir %%ETCDIR%%/waynedalton
 @dir %%ETCDIR%%/wenzhou
+@dir %%ETCDIR%%/widom
+@dir %%ETCDIR%%/zipato
 @dir %%ETCDIR%%/zwave.me
 @dir %%ETCDIR%%
 @dir include/openzwave/aes
@@ -275,4 +363,4 @@ lib/libopenzwave.so.1.3
 @dir include/openzwave/platform
 @dir include/openzwave/value_classes
 @dir include/openzwave
-@dir lib/pkgconfig
+@dir libdata/pkgconfig
