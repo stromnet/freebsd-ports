@@ -58,6 +58,7 @@ bin/ozw_config
 %%ETCDIR%%/duwi/ZWES1000.xml
 %%ETCDIR%%/duwi/ZWESJ300.xml
 %%ETCDIR%%/enerwave/zwn-sc7.xml
+%%ETCDIR%%/eurotronic/eur_cometz.xml
 %%ETCDIR%%/eurotronic/eur_stellaz.xml
 %%ETCDIR%%/everspring/ad146.xml
 %%ETCDIR%%/everspring/ad147.xml
@@ -95,6 +96,7 @@ bin/ozw_config
 %%ETCDIR%%/fibaro/fgsd002.xml
 %%ETCDIR%%/fibaro/fgss101.xml
 %%ETCDIR%%/fibaro/fgwpe.xml
+%%ETCDIR%%/fortrezz/mimolite.xml
 %%ETCDIR%%/frostdale/fdn2nxx.xml
 %%ETCDIR%%/ge/dimmer.xml
 %%ETCDIR%%/ge/dimmer_module.xml
@@ -124,6 +126,7 @@ bin/ozw_config
 %%ETCDIR%%/mcohome/mhs411.xml
 %%ETCDIR%%/mcohome/mhs412.xml
 %%ETCDIR%%/mcohome/mhs513.xml
+%%ETCDIR%%/merten/507801.xml
 %%ETCDIR%%/merten/50x5xx.xml
 %%ETCDIR%%/nodon/asp3100SmartPlug.xml
 %%ETCDIR%%/nodon/crc3100OctanRemote.xml
@@ -142,15 +145,21 @@ bin/ozw_config
 %%ETCDIR%%/popp/123580.xml
 %%ETCDIR%%/popp/123601.xml
 %%ETCDIR%%/popp/123658.xml
+%%ETCDIR%%/popp/POP009303.xml
+%%ETCDIR%%/popp/POPE009105.xml
 %%ETCDIR%%/qees/reto-plugin-switch.xml
 %%ETCDIR%%/qubino/ZMNHAA2.xml
 %%ETCDIR%%/qubino/ZMNHAD1.xml
 %%ETCDIR%%/qubino/ZMNHBA2.xml
 %%ETCDIR%%/qubino/ZMNHBD2.xml
 %%ETCDIR%%/qubino/ZMNHCA2.xml
+%%ETCDIR%%/qubino/ZMNHCD.xml
 %%ETCDIR%%/qubino/ZMNHDA2.xml
+%%ETCDIR%%/qubino/ZMNHDD1.xml
 %%ETCDIR%%/qubino/ZMNHIA2.xml
 %%ETCDIR%%/qubino/ZMNHJA2.xml
+%%ETCDIR%%/qubino/ZMNHJD1.xml
+%%ETCDIR%%/qubino/ZMNHND1.xml
 %%ETCDIR%%/rcs/em52-zw.xml
 %%ETCDIR%%/rcs/pm12-zw.xml
 %%ETCDIR%%/rcs/therm0005.xml
@@ -162,12 +171,12 @@ bin/ozw_config
 %%ETCDIR%%/schlage/BE469NXCEN.xml
 %%ETCDIR%%/schlagelink/itemp.xml
 %%ETCDIR%%/schlagelink/minikeypad.xml
+%%ETCDIR%%/sensative/strips-mazw.xml
 %%ETCDIR%%/swiid/swiidinter.xml
 %%ETCDIR%%/swiid/swiidplug.xml
 %%ETCDIR%%/thermofloor/multireg.xml
 %%ETCDIR%%/trane/TZEMT400AB32MAA.xml
 %%ETCDIR%%/trane/TZEMT400BB32MAA.xml
-%%ETCDIR%%/vision/cp3102.xml
 %%ETCDIR%%/vision/zd2102.xml
 %%ETCDIR%%/vision/zm1601eu.xml
 %%ETCDIR%%/vision/zm1602eu.xml
@@ -189,7 +198,9 @@ bin/ozw_config
 %%ETCDIR%%/zwave.me/ZME_05431.xml
 %%ETCDIR%%/zwave.me/ZME_06433.xml
 %%ETCDIR%%/zwave.me/ZME_06436.xml
+%%ETCDIR%%/zwave.me/ZME_064381.xml
 %%ETCDIR%%/zwave.me/ZME_064435.xml
+%%ETCDIR%%/zwave.me/ZME_KFOB-S.xml
 %%ETCDIR%%/zwave.me/ZME_WALLC-S.xml
 %%ETCDIR%%/zwave.me/ZME_WCD2.xml
 %%ETCDIR%%/zwave.me/iTemp.xml
@@ -305,7 +316,7 @@ include/openzwave/value_classes/ValueShort.h
 include/openzwave/value_classes/ValueStore.h
 include/openzwave/value_classes/ValueString.h
 lib/libopenzwave.so
-lib/libopenzwave.so.1.3
+lib/libopenzwave.so.1.4
 libdata/pkgconfig/libopenzwave.pc
 @dir %%ETCDIR%%/2gig
 @dir %%ETCDIR%%/BeNext
