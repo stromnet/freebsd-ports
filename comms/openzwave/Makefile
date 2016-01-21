@@ -1,6 +1,5 @@
 # Created by: Johan Strom <johna@stromnet.se>
 # $FreeBSD$
-# Set as build var, used during build process
 
 PORTNAME=openzwave
 PORTVERSION=1.4.0
