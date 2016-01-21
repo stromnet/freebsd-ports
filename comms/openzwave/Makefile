@@ -1,24 +1,21 @@
 # Created by: Johan Strom <johna@stromnet.se>
 # $FreeBSD$
-
-# echo $(git describe --long --tags --dirty 2>/dev/null | sed s/^v//) | awk '{split($$0,a,"-"); print a[2]}'
-VERSION_REV=8
+# Set as build var, used during build process
 
 PORTNAME=openzwave
-PORTVERSION=1.4.${VERSION_REV}
-#CATEGORIES=	comms
-CATEGORIES=	devel
-PKGNAMESUFFIX=	-devel
+PORTVERSION=1.4.0
+CATEGORIES=	comms
 
 MAINTAINER=johan@stromnet.se
 COMMENT=Open-zwave - An open-source interface to Z-Wave networks
 
 LICENSE=LGPL20
 
+USE_LDCONFIG=yes
 USE_GITHUB=yes
 GH_ACCOUNT=OpenZWave
 GH_PROJECT=open-zwave
-GH_TAGNAME=	1c2511
+GH_TAGNAME=v1.4
 
 USES=gmake tar:bz2 iconv pkgconfig
 
@@ -47,7 +44,12 @@ post-install:
 .else
 	${RM} ${STAGEDIR}${DOCSDIR}/Doxyfile.in
 .endif
+	# File in wrong dir, master fix 27bfef31
+	${MV} ${STAGEDIR}/${LOCALBASE}/etc/openzwave/POP009303.xml ${STAGEDIR}/${LOCALBASE}/etc/openzwave/popp/POP009303.xml
 
-MAKE_ARGS=VERSION_REV=${VERSION_REV} LIBDIR=${WRKSRC} docdir=$(DOCSDIR)
+# Extract patch version
+VERSION_REV!=${ECHO} ${PORTVERSION} | ${CUT} -f3 -d'.'
+
+MAKE_ARGS=VERSION_REV=${VERSION_REV} LIBDIR=${WRKSRC} docdir=${DOCSDIR}
 
 .include <bsd.port.mk>
