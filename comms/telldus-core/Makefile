@@ -1,5 +1,5 @@
 # Created by: Johan Strom <johna@stromnet.se>
-# $FreeBSD: head/comms/telldus-core/Makefile 364977 2014-08-15 14:43:47Z marino $
+# $FreeBSD: head/comms/telldus-core/Makefile 384038 2015-04-15 08:20:27Z tijl $
 
 PORTNAME=	telldus-core
 PORTVERSION=	2.1.2
@@ -17,9 +17,7 @@ LIB_DEPENDS=	libftdi.so:${PORTSDIR}/devel/libftdi \
 		libconfuse.so:${PORTSDIR}/devel/libconfuse \
 		libargp.so:${PORTSDIR}/devel/argp-standalone
 
-USE_LDCONFIG=	yes
-
-USES=		iconv cmake compiler:c++11-lang
+USES= 		cmake compiler:c++11-lang iconv:wchar_t
 
 #CMAKE_VERBOSE=yes
 CMAKE_ARGS+=-DGENERATE_MAN=TRUE
@@ -32,8 +30,6 @@ MAKE_JOBS_UNSAFE=	yes
 USE_RC_SUBR=	telldusd
 USER=		nobody
 GROUP=		dialer
-
-SUB_FILES=	pkg-message
 
 .include <bsd.port.pre.mk>
 
