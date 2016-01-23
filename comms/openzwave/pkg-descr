@@ -1,3 +1,6 @@
 Open-zwave - An open-source interface to Z-Wave networks.
 
-WWW: https://code.google.com/p/open-zwave/
+A Open and Free Library that talks to Z-Wave devices via a Dongle
+and the Z-Wave Serial API.
+
+WWW: http://www.openzwave.net/
